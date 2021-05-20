@@ -1,8 +1,25 @@
-.box{
-    background-color: beige;
-    height: 50px;
-    width: 100%;
+/* COMMONS */
+ *.card{
+    border: 0 transparent;
+    background-color: transparent;
+} 
+.text-cover-section p{
+    font-size: 18px; 
 }
+
+#jumbotron .row, #jumbotron .container, #section-3 .row, #section-3 .container {
+    height: 100%;
+}
+
+.circle-card{
+    border-radius: 20px;
+}
+
+#section-4 .col .card-body .card-title{
+    font-size: 18px;
+} 
+
+/* ---------------- HEADER---------------- */
 
 #jumbotron{
     background-image: url('../img/jumbo-bg.png');
@@ -10,32 +27,51 @@
     background-position: center;
     width: 100%;
     height: 550px;
-
 }
+
+#jumbotron .row,#jumbotron .container {
+    height: 100%;
+}
+
+#jumbotron .text-cover-section img{
+    width: 250px;
+}
+
+/* ---------------- MAIN ---------------- */
+
+/* SECTION-3 */
+
 #section-3{
     background-image: url('../img/it-takes-two-hero-banner-desktop.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 550px;
+    height: 600px;
 }
-
 
 .section-3-img{
     width: 200px;
 }
 
+/* SECTION-4 */
+
 #section-4{
     background-color: #1f1f1f;
 }
+
+/* SECTION-6 */
 
 #section-6{
     background-color: #bebcbb;
 }
 
+/* SECTION-8 */
+
 #section-8{
     background-color: #161c3b;
 }
+
+/* ---------------- FOOTER ---------------- */
 
 footer{
     background-color: #00439c;
