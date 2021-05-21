@@ -1,19 +1,53 @@
 /* COMMONS */
- *.card{
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* CARDS */ 
+
+*.card{
     border: 0 transparent;
     background-color: transparent;
 } 
+
+.circle-card{
+    border-radius: 20px;
+}
+
+/* TEXT */
+
+.text-cover-section h2{
+    font-weight:400;
+}
+
 .text-cover-section p{
     font-size: 18px; 
 }
+
+#section-6 p, #section-8 p{
+    font-size: 18px; 
+}
+
+/* BUTTONS */
+
+.btn_red{
+    background-color: #cd3d0e;
+    color: white;
+}
+
+.btn_grey{
+    background-color:#d9dadc;  
+}
+
+
+
 
 #jumbotron .row, #jumbotron .container, #section-3 .row, #section-3 .container {
     height: 100%;
 }
 
-.circle-card{
-    border-radius: 20px;
-}
+
 
 #section-4 .col .card-body .card-title{
     font-size: 18px;
@@ -59,13 +93,28 @@
     background-color: #1f1f1f;
 }
 
-/* SECTION-6 */
+#section-5 .reg{
+    font-size: 30px;
+    vertical-align: top;
+}
+
+/* SECTION-6 & SECTION-8 */
+
+#section-6 p, #section-8 p{
+    font-size: 18px; 
+}
+
+#section-6 .left-part img, #section-8 .left-part img{
+    width: 60%;
+}
+
+#section-6 .right-part, #section-8 .right-part {
+   display:none;
+}
 
 #section-6{
     background-color: #bebcbb;
 }
-
-/* SECTION-8 */
 
 #section-8{
     background-color: #161c3b;
@@ -96,4 +145,35 @@ footer a:hover, footer a:active, footer a:link, footer a:visited{
 
 footer .top-footer .language img{
     width:50px
+}
+
+/* HOVER */
+
+
+
+.box {
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+  ;
+}
+
+.effect1{
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+  }
+
+/* RESPONSIVE */
+
+@media screen and (min-width:768px) {
+
+    #section-6 .right-part, #section-8 .right-part {
+        display: flex;
+    }
+    
 }
