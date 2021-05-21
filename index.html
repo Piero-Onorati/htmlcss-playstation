@@ -19,62 +19,145 @@
 <body>
 
     <!-- start header -->
-    <header>
+    <header class="fixed-top">
 
         <!-------------- NAVBAR: navbar-1 + navbar-2 ------------>
 
             <!-- start navbar-1 -->
-            <nav class="navbar navbar-dark bg-dark ">
-                <div class="container-fluid justify-content-end">
-                  <a class="navbar-brand" href="#">
-                    <img src="img/sony_logo.svg" alt="" width="100" height="24">
-                  </a>
+            <nav class="navbar navbar-dark navbar_1 p-0 m-0">
+                <div class="container-fluid justify-content-end align-items-center">
+                    <a class="navbar-brand p-0 m-0" href="#">
+                    <img src="img/sony_logo.svg" class="" alt="sony_logo" width="80">
+                    </a>
                 </div>
             </nav>
             <!-- end navbar-1 -->
 
             <!-- start navbar-2 -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light p-1 m-0 navbar_2 ">
+    
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Navbar scroll</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+    
+                    <!-- LOGO -->
+                    <a class="navbar-brand" href="#"><img src="img/play_logo.svg" alt=""></a>
+    
+                    <!-- TOGGLE BUTTON -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Link
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </button>
+    
+    
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+    
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                            <!-- Giochi -->
+                            <li class="nav-item dropdown mx-2">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Giochi</a>
+    
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+    
+                            <!-- Hardware -->
+                            <li class="nav-item dropdown mx-2">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Hardware</a>
+    
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+    
+                            <!-- Servizi -->
+                            <li class="nav-item dropdown mx-2">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servizi</a>
+    
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+    
+                            <!-- Novità -->
+                            <li class="nav-item dropdown mx-2">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Novità</a>
+    
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+    
+                            <!-- Fai acquisti -->
+                            <li class="nav-item dropdown mx-2">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Fai acquisti</a>
+    
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+    
+                            <!-- Supporto -->
+                            <li class="nav-item dropdown mx-2">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Supporto</a>
+    
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
                         </ul>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
-                      </li>
-                    </ul>
-                    <form class="d-flex">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                  </div>
+    
+                        <div class="d-flex align-items-center">
+                            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                                <li class="nav-item dropdown mx-2">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">My PlayStation</a>
+        
+                                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+    
+                                <button class="btn btn-dark rounded-pill mx-2" type="submit">Accedi</button>
+                                <a href="#"><img src="img/lens.svg" class="img-fluid lens mx-2" alt=""></a>
+                            </ul>
+                        </div>
+    
+                    </div>
                 </div>
             </nav>
             <!-- end navbar-2 -->
+      
+
+
 
         <!---------------------- end NAVBAR -------------------->
 
-        <!-------- START JUMBOTRON : COVER-JUMBO + JUMBO-ITEMS ------------->
+    </header>
+    <!-- end header -->
+
+    <!-- start main -->
+    <main>
+
+        <!-------- START section-1 JUMBOTRON : COVER-JUMBO + JUMBO-ITEMS ------------->
 
         <!-- start cover-jumbo -->
         <section id="jumbotron">
@@ -111,37 +194,37 @@
                 <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-6 g-4">
                     <div class="col">
                       <div class="card">
-                        <img src="img/returnal-listing-thumb-01-ps5.jpg" class="img-fluid" alt="...">
+                        <img src="img/returnal-listing-thumb-01-ps5.jpg" class="img-fluid circle-card" alt="...">
                       </div>
                     </div>
 
                     <div class="col">
                       <div class="card">
-                        <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" class="img-fluid" alt="...">
+                        <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" class="img-fluid circle-card" alt="...">
                       </div>
                     </div>
 
                     <div class="col">
                         <div class="card">
-                          <img src="img/returnal-listing-thumb-01-ps5.jpg" class="img-fluid" alt="...">
+                          <img src="img/returnal-listing-thumb-01-ps5.jpg" class="img-fluid circle-card" alt="...">
                         </div>
                     </div>
   
                     <div class="col">
                         <div class="card">
-                          <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" class="img-fluid" alt="...">
+                          <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" class="img-fluid circle-card" alt="...">
                         </div>
                     </div>
 
                     <div class="col">
                         <div class="card">
-                          <img src="img/returnal-listing-thumb-01-ps5.jpg" class="img-fluid" alt="...">
+                          <img src="img/returnal-listing-thumb-01-ps5.jpg" class="img-fluid circle-card" alt="...">
                         </div>
                     </div>
   
                     <div class="col">
                         <div class="card">
-                            <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" class="img-fluid" alt="...">
+                            <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" class="img-fluid circle-card" alt="...">
                         </div>
                     </div>
 
@@ -156,14 +239,8 @@
 
         <!-------- END JUMBOTRON : COVER-JUMBO + JUMBO-ITEMS ------------->
 
-    </header>
-    <!-- end header -->
-
-    <!-- start main -->
-    <main>
-
         <!-- start section-2 -->
-        <section class="my-5 py-4">
+        <section class="my-5 py-4" id="section-2">
 
             <div class="container">
 
@@ -198,11 +275,11 @@
                 <!-- end SECTION CONTENT-PART1 -->
 
                 <!-- start SECTION CONTENT-PART2 -->
-                <div class="row row-cols-3 row-cols-md-5 g-4">
+                <div class="row row-cols-3 row-cols-md-5 g-4 section-2_part-2">
     
                     <div class="col">
                         <div class="card text-center">
-                            <img src="img/playstation-5-thumb.png" class="card-img-top px-5" alt="playstation-5">
+                            <img src="img/playstation-5-thumb.png" class="card-img-top px-lg-4" alt="playstation-5">
                             <div class="card-body">
                               <h6 class="card-title">Console PS5</h6>
                             </div>
@@ -211,7 +288,7 @@
     
                     <div class="col">
                         <div class="card text-center">
-                            <img src="img/joypad-thumb.png" class="card-img-top px-5" alt="joypad">
+                            <img src="img/joypad-thumb.png" class="card-img-top px-lg-4" alt="joypad">
                             <div class="card-body">
                               <h6 class="card-title">Controller wireless DualSense&trade;</h6>
                             </div>
@@ -220,7 +297,7 @@
     
                     <div class="col">
                         <div class="card text-center">
-                            <img src="img/headset-thumb.png" class="card-img-top px-5" alt="headset">
+                            <img src="img/headset-thumb.png" class="card-img-top px-lg-4" alt="headset">
                             <div class="card-body">
                               <h6 class="card-title">Cuffie wireless con microfono PLUS 3D&trade;</h6>
                             </div>
@@ -229,7 +306,7 @@
 
                     <div class="col">
                         <div class="card text-center">
-                            <img src="img/remote-thumb.png" class="card-img-top px-5" alt="remote">
+                            <img src="img/remote-thumb.png" class="card-img-top px-lg-4" alt="remote">
                             <div class="card-body">
                               <h6 class="card-title">Telecomando Media</h6>
                             </div>
@@ -238,7 +315,7 @@
 
                     <div class="col">
                         <div class="card text-center">
-                            <img src="img/camera-thumb.jpg" class="card-img-top px-5" alt="camera">
+                            <img src="img/camera-thumb.jpg" class="card-img-top px-lg-4" alt="camera">
                             <div class="card-body">
                               <h6 class="card-title">Telecamera HD</h6>
                             </div>
@@ -269,7 +346,7 @@
                             <img src="img/it-takes-two-logo.png" class="section-3-img" alt="it-takes-two-logo">
                             <h2 class="card-title display-6 mt-4">Un'avventura coeperativa selvaggia ti attende</h2>
                             <p class="card-text my-5">Trova un amico e partite insieme per l'avventura più folle delle vostre vite in It Take Two, un gioco di avventura cooperativa a piattaforma che starvolge il suo genere</p>
-                            <a href="#" class="btn btn-danger fw-bold rounded-pill">Acquista ora</a>
+                            <a href="#" class="btn btn_red fw-bold rounded-pill">Acquista ora</a>
                         </div>
 
                     </div>

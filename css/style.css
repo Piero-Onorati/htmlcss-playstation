@@ -40,22 +40,28 @@ body{
     background-color:#d9dadc;  
 }
 
-
-
+/* SECTION WITH COVER 100% width : JUMBOTRON & SECTION-3 */
 
 #jumbotron .row, #jumbotron .container, #section-3 .row, #section-3 .container {
     height: 100%;
 }
 
 
-
-#section-4 .col .card-body .card-title{
-    font-size: 18px;
-} 
-
 /* ---------------- HEADER---------------- */
 
+.navbar_1{
+    background-color: black;
+    height: 40px;
+    line-height: 40px;
+}
+
+
+.navbar_2 .lens{
+    width:50%;
+}
+
 #jumbotron{
+    margin-top: 100px;
     background-image: url('../img/jumbo-bg.png');
     background-size: cover;
     background-position: center;
@@ -72,6 +78,11 @@ body{
 }
 
 /* ---------------- MAIN ---------------- */
+
+
+#section-2 .section-2_part-2 h6{
+    display: none;
+}
 
 /* SECTION-3 */
 
@@ -92,6 +103,12 @@ body{
 #section-4{
     background-color: #1f1f1f;
 }
+
+#section-4 .col .card-body .card-title{
+    font-size: 18px;
+} 
+
+/* SECTION-5 */
 
 #section-5 .reg{
     font-size: 30px;
@@ -171,6 +188,10 @@ footer .top-footer .language img{
 /* RESPONSIVE */
 
 @media screen and (min-width:768px) {
+
+    #section-2 .section-2_part-2 h6{
+        display: block;
+    }
 
     #section-6 .right-part, #section-8 .right-part {
         display: flex;
