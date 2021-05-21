@@ -57,7 +57,7 @@ body{
 
 
 .navbar_2 .lens{
-    width:50%;
+    width:30px;
 }
 
 /* ---------------- MAIN ---------------- */
@@ -71,7 +71,7 @@ body{
     height: 550px;
 }
 
-#jumbotron .row,#jumbotron .container {
+#jumbotron .row, #jumbotron .container {
     height: 100%;
 }
 
@@ -79,8 +79,31 @@ body{
     width: 250px;
 }
 
+.jumbo-items .container .highlighted_card{
+    position: relative;
+}
+
+.jumbo-items .container .highlighted_card::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    border-radius: 25px;
+    margin:-5px;
+    border: 3px solid #0d6efd;
+}
+
+/* SECTION-2 */
+
 #section-2 .section-2_part-2 h6{
     display: none;
+}
+
+#section-2 .section-2_part-2 .card{
+    border-bottom:4px solid transparent;
+    opacity:0.7;
 }
 
 /* SECTION-3 */
@@ -141,6 +164,9 @@ body{
 footer{
     background-color: #00439c;
 }
+footer .ps_logo_white{
+    width:100px
+}
 
 footer .logo-sie{
     width: 130px;
@@ -160,7 +186,7 @@ footer a:hover, footer a:active, footer a:link, footer a:visited{
 }
 
 footer .top-footer .language img{
-    width:50px
+    width:25px;
 }
 
 /* HOVER */
@@ -202,7 +228,6 @@ footer .top-footer .language img{
     border: 3px solid #363636;
 }
 
-  
 .btn_red:hover::before {
     opacity:1;
     top: 0;
@@ -236,7 +261,13 @@ footer .top-footer .language img{
     border: 3px solid #0d6efd;
 }
 
-
+.jumbo-items .container .highlighted_card:hover{
+    position: relative; 
+    top: -10px;
+    -webkit-box-shadow: 0 20px 9px -6px #777;
+    -moz-box-shadow: 0 20px 9px -6px #777;
+    box-shadow: 0 20px 9px -6px #777;
+}
 
 .jumbo-items a img:hover{
     position: relative; 
@@ -244,6 +275,11 @@ footer .top-footer .language img{
     -webkit-box-shadow: 0 20px 9px -6px #777;
     -moz-box-shadow: 0 20px 9px -6px #777;
     box-shadow: 0 20px 9px -6px #777;
+}
+
+#section-2 .section-2_part-2 .card:hover{
+    border-bottom:4px solid #0d6efd;
+    opacity: 1;
 }
 
 
