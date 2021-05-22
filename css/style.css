@@ -55,6 +55,13 @@ body{
     line-height: 40px;
 }
 
+.navbar_2{
+    background-color: #ffffff;
+}
+
+.dropdown_2 a{
+    color: black;
+}
 
 .navbar_2 .lens{
     width:30px;
@@ -297,3 +304,69 @@ footer .top-footer .language img{
     }
     
 }
+
+@media screen and (min-width:992px) {
+
+    .navbar .has-megamenu{position:static!important;}
+    .navbar .megamenu{left:0; right:0; width:100%; margin-top:0;  }
+
+    #section-5 .section-5-content .card-body h2{
+        font-size: 40px;
+    }
+    
+}
+
+@media(max-width: 991px){
+    
+    .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+        overflow-y: auto;
+        max-height: 90vh;
+        margin-top:10px;
+    }
+}
+
+.navbar_2{
+    background-color: #ffffff;
+}
+
+.navbar .megamenu{ 
+    padding: 1rem; 
+    background-color: #fff
+}
+
+
+.dropdown_2{
+    position: static;
+}
+
+.megamenu .bottom-megamenu li{
+    list-style: none;
+}
+
+/*add the new bullet point */
+.megamenu .bottom-megamenu li::before {
+      display: inline-block;
+      content: '';
+      -webkit-border-radius: 0.375rem;
+      border-radius: 0.375rem;
+      height: 0.75rem;
+      width: 0.75rem;
+      margin-right: 0.5rem;
+      background-color: #0072ce;
+}
+
+
+.megamenu .top-megamenu a:hover .megamenu_card{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.megamenu .bottom-megamenu ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+.megamenu .bottom-megamenu ul li a:hover{
+    color:#0072ce
+}
+
