@@ -59,12 +59,45 @@ body{
     background-color: #ffffff;
 }
 
-.dropdown_2 a{
+header .navbar_2 .navbar-collapse .dropdown_2 a{
     color: black;
 }
 
 .navbar_2 .lens{
     width:30px;
+}
+
+/* ------------ megamenu -------------------*/
+
+.dropdown_2{
+    position: static;
+}
+
+.navbar .megamenu{ 
+    padding: 1rem; 
+    background-color: #fff
+}
+
+.megamenu .bottom-megamenu li{
+    list-style: none;
+}
+
+/*add the new bullet point */
+.megamenu .bottom-megamenu li::before {
+      display: inline-block;
+      content: '';
+      -webkit-border-radius: 0.375rem;
+      border-radius: 0.375rem;
+      height: 0.75rem;
+      width: 0.75rem;
+      margin-right: 0.5rem;
+      background-color: #0072ce;
+}
+
+.megamenu .bottom-megamenu ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
 }
 
 /* ---------------- MAIN ---------------- */
@@ -196,7 +229,9 @@ footer .top-footer .language img{
     width:25px;
 }
 
-/* HOVER */
+/* ----------------------- HOVER ----------------------------*/
+
+/* Hover effect on all the buttons (btn_red, btn_grey, btn-dark and btn-primary)*/
 
 .btn_red, .btn_grey, .btn_others{
     position: relative;
@@ -268,6 +303,26 @@ footer .top-footer .language img{
     border: 3px solid #0d6efd;
 }
 
+/* Hover on navbar */
+
+header .navbar_2 .navbar-collapse .dropdown_2 a:hover{
+    color: #0072ce;
+}
+
+/* Hover for the cards in the top-megamenu */
+
+.megamenu .top-megamenu a:hover .megamenu_card{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+/* Hover for the list in the bottom-megamenu */
+
+.megamenu .bottom-megamenu ul li a:hover{
+    color:#0072ce
+}
+
+/* Hover effect on the card of the JUMBOTRON */
+
 .jumbo-items .container .highlighted_card:hover{
     position: relative; 
     top: -10px;
@@ -284,14 +339,14 @@ footer .top-footer .language img{
     box-shadow: 0 20px 9px -6px #777;
 }
 
+/* Hover on card of section-2: a blue border-bottom will appear and the opacity will change */
+
 #section-2 .section-2_part-2 .card:hover{
     border-bottom:4px solid #0d6efd;
     opacity: 1;
 }
 
-
-
-/* RESPONSIVE */
+/* ----------------------------- RESPONSIVE -------------------------*/
 
 @media screen and (min-width:768px) {
 
@@ -303,6 +358,14 @@ footer .top-footer .language img{
         display: flex;
     }
     
+}
+
+@media(max-width: 768px){
+    
+    header{
+        max-height: 85%;
+        overflow-y: auto;
+    }
 }
 
 @media screen and (min-width:992px) {
@@ -318,55 +381,9 @@ footer .top-footer .language img{
 
 @media(max-width: 991px){
     
-    .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+    .navbar.fixed-top .navbar-collapse{
         overflow-y: auto;
         max-height: 90vh;
         margin-top:10px;
     }
 }
-
-.navbar_2{
-    background-color: #ffffff;
-}
-
-.navbar .megamenu{ 
-    padding: 1rem; 
-    background-color: #fff
-}
-
-
-.dropdown_2{
-    position: static;
-}
-
-.megamenu .bottom-megamenu li{
-    list-style: none;
-}
-
-/*add the new bullet point */
-.megamenu .bottom-megamenu li::before {
-      display: inline-block;
-      content: '';
-      -webkit-border-radius: 0.375rem;
-      border-radius: 0.375rem;
-      height: 0.75rem;
-      width: 0.75rem;
-      margin-right: 0.5rem;
-      background-color: #0072ce;
-}
-
-
-.megamenu .top-megamenu a:hover .megamenu_card{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-}
-
-.megamenu .bottom-megamenu ul li a{
-    text-decoration: none;
-    color: black;
-    font-weight: bolder;
-}
-
-.megamenu .bottom-megamenu ul li a:hover{
-    color:#0072ce
-}
-
