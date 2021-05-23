@@ -119,7 +119,12 @@ header .navbar_2 .navbar-collapse .dropdown_2 a{
     width: 250px;
 }
 
+.jumbo-items .container .card{
+    opacity:0.8;
+}
+
 .jumbo-items .container .highlighted_card{
+    opacity: 1;
     position: relative;
 }
 
@@ -143,7 +148,7 @@ header .navbar_2 .navbar-collapse .dropdown_2 a{
 
 #section-2 .section-2_part-2 .card{
     border-bottom:4px solid transparent;
-    opacity:0.7;
+    opacity:0.8;
 }
 
 /* SECTION-3 */
@@ -330,6 +335,9 @@ header .navbar_2 .navbar-collapse .dropdown_2 a:hover{
     -moz-box-shadow: 0 20px 9px -6px #777;
     box-shadow: 0 20px 9px -6px #777;
 }
+.jumbo-items .card:hover{
+    opacity: 1;
+}
 
 .jumbo-items a img:hover{
     position: relative; 
@@ -367,6 +375,47 @@ header .navbar_2 .navbar-collapse .dropdown_2 a:hover{
         overflow-y: auto;
     }
 }
+
+@media screen and (min-width: 768px) and (max-width:992px){
+
+    #section-5 .section-5-content .card-body{
+        height: 80%;
+    }
+
+    #section-5 .section-5-content .card h2{
+        height: 20%;
+    }
+
+    #section-5 .section-5-content .card p{
+        height: 55%;
+    }
+
+    #section-6 .container .left-part p{
+        font-size: 15px;
+    }
+
+    #section-8 .container .left-part p{
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (min-width: 992px) and (max-width:1200px){
+
+    #section-5 .section-5-content .card-body{
+        height: 80%;
+    }
+
+    #section-5 .section-5-content .card h2{
+        height: 35%;
+    }
+
+    #section-5 .section-5-content .card p{
+        height: 45%;
+    }
+
+}
+
 
 @media screen and (min-width:992px) {
 
