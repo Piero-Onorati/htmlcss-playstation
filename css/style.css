@@ -40,12 +40,16 @@ body{
     background-color:#d9dadc;  
 }
 
+.btn_blue{
+    background-color:  #0d6efd;
+    color: white;
+}
+
 /* SECTION WITH COVER 100% width : JUMBOTRON & SECTION-3 */
 
 #jumbotron .row, #jumbotron .container, #section-3 .row, #section-3 .container {
     height: 100%;
 }
-
 
 /* ---------------- HEADER---------------- */
 
@@ -238,12 +242,12 @@ footer .top-footer .language img{
 
 /* Hover effect on all the buttons (btn_red, btn_grey, btn-dark and btn-primary)*/
 
-.btn_red, .btn_grey, .btn_others{
+.btn_red, .btn_grey, .btn_blue, .btn-dark{
     position: relative;
     display: inline-block;
 }
 
-.btn_red::before, .btn_grey::before, .btn_others::before {
+.btn_red::before, .btn_grey::before, .btn_blue::before, .btn-dark::before {
     content: '';
     position: absolute;
     opacity:0;
@@ -251,28 +255,13 @@ footer .top-footer .language img{
     display: inline-block;
 }
   
-.btn_red:hover, .btn_others:hover {
+.btn_red:hover, .btn_blue:hover, .btn-dark:hover {
     cursor: pointer;
     color:white;
 }
 
-.btn-primary:hover{
-    background-color: #0d6efd;
-}
-
 .btn_grey:hover{
     cursor: pointer;
-}
-
-.btn-dark:hover::before {
-    opacity:1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin:-6px;
-    border-radius: 30px;
-    border: 3px solid #363636;
 }
 
 .btn_red:hover::before {
@@ -297,7 +286,7 @@ footer .top-footer .language img{
     border: 3px solid #d9dadc;
 }
 
-.btn-primary:hover::before {
+.btn_blue:hover::before {
     opacity:1;
     top: 0;
     left: 0;
@@ -306,6 +295,17 @@ footer .top-footer .language img{
     margin:-6px;
     border-radius: 30px;
     border: 3px solid #0d6efd;
+}
+
+.btn-dark:hover::before {
+    opacity:1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin:-6px;
+    border-radius: 30px;
+    border: 3px solid #363636;
 }
 
 /* Hover on navbar */
@@ -335,6 +335,7 @@ header .navbar_2 .navbar-collapse .dropdown_2 a:hover{
     -moz-box-shadow: 0 20px 9px -6px #777;
     box-shadow: 0 20px 9px -6px #777;
 }
+
 .jumbo-items .card:hover{
     opacity: 1;
 }
@@ -415,7 +416,6 @@ header .navbar_2 .navbar-collapse .dropdown_2 a:hover{
     }
 
 }
-
 
 @media screen and (min-width:992px) {
 
