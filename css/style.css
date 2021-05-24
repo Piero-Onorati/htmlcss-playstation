@@ -104,6 +104,15 @@ header .navbar_2 .navbar-collapse .dropdown_2 a{
     font-weight: bolder;
 }
 
+.dropdown-toggle[aria-expanded="true"]:after {
+    transform: rotate(180deg); 
+}
+
+/*animation*/ 
+.dropdown-toggle:after { 
+    transition: 0.7s; 
+}
+
 /* ---------------- MAIN ---------------- */
 
 #jumbotron{
