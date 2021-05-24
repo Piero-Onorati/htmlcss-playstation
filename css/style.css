@@ -263,7 +263,11 @@ footer .top-footer .language img{
     display: inline-block;
 }
 
-.btn_red::before, .btn_grey::before, .btn_blue::before, .btn-dark::before {
+.btn_red:focus, .btn_grey:focus, .btn_blue:focus, .btn-dark:focus{
+    box-shadow: none;
+}
+
+.btn_red::before, .btn_grey::before, .btn_blue::before, .btn-dark::before{
     content: '';
     position: absolute;
     opacity:0;
@@ -271,7 +275,7 @@ footer .top-footer .language img{
     display: inline-block;
 }
   
-.btn_red:hover, .btn_blue:hover, .btn-dark:hover {
+.btn_red:hover, .btn_blue:hover, .btn-dark:hover{
     cursor: pointer;
     color:white;
 }
