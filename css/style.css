@@ -208,6 +208,13 @@ header .navbar_2 .navbar-collapse .dropdown_2 a{
     background-color: #161c3b;
 }
 
+/* SECTION-9 */
+
+#section-9 .section-9-content img:hover{
+    cursor: pointer;
+    filter: brightness(80%);
+}
+
 /* ---------------- FOOTER ---------------- */
 
 footer{
