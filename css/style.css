@@ -267,6 +267,10 @@ footer .top-footer .language img{
     box-shadow: none;
 }
 
+.btn-dark:active, .btn-dark:focus-within, .btn-dark:visited, .btn-dark:link, .btn-dark:target, .btn-dark:active:focus{
+    box-shadow: none
+}
+
 .btn_red::before, .btn_grey::before, .btn_blue::before, .btn-dark::before{
     content: '';
     position: absolute;
